@@ -4,11 +4,11 @@ Bienvenido a ConfirmSend!
 Este es un sencillo Widget de jQuery pensado en aquellos casos donde se requiere realizar una confirmación del usuario previa al submit de un Form o envío de un Link.
 
 
-#Funcionamiento
+###Funcionamiento
 
 El Widget funciona con links `<a href="mi_peticion.url">` y con submits de Forms `<form action="mi_peticion.url">`
 
-**Includes:**
+####Includes:
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
@@ -16,7 +16,7 @@ El Widget funciona con links `<a href="mi_peticion.url">` y con submits de Forms
     <script src="js/jquery.confirm-send-1.0.js"></script>
     
 
-**Código HTML:**
+####Código HTML:
 
 En caso de ser un link:
 
@@ -31,7 +31,7 @@ En caso de ser un form:
 		<input type="submit" value="Enviar"/>
     </form>
 
-**Código JS:**
+####Código JS:
 
 En caso de ser un link:
 
