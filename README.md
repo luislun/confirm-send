@@ -10,41 +10,47 @@ El Widget funciona con links `<a href="mi_peticion.url">` y con submits de Forms
 
 ####Includes:
 
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
+```java
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.min.js"></script>
     
-    <script src="js/jquery.confirm-send-1.0.js"></script>
-    
+<script src="js/jquery.confirm-send-1.0.js"></script>
+```    
 
 ####Código HTML:
 
 En caso de ser un link:
 
-    <a href="eliminar_datos.php" id="eliminar">Eliminar Registro</>
+````html
+<a href="eliminar_datos.php" id="eliminar">Eliminar Registro</>
+````
 
 En caso de ser un form:
 
-    <form action="guardar_datos.php" method="POST" id="guardado">
-	    <input type="text" name="name" placeholder="Nombre" />
-   	    <input type="text" name="second_name" placeholder="Apellido" />
-	
-		<input type="submit" value="Enviar"/>
-    </form>
+````html
+<form action="guardar_datos.php" method="POST" id="guardado">
+    <input type="text" name="name" placeholder="Nombre" />
+       <input type="text" name="second_name" placeholder="Apellido" />
+
+	<input type="submit" value="Enviar"/>
+</form>
+````
 
 ####Código JS:
 
 En caso de ser un link:
 
-    $( '#eliminar' ).confirmSend({
-	    message: '¿Está seguro de que desea eliminar el registro?'
-    });
-
+````js
+$( '#eliminar' ).confirmSend({
+    message: '¿Está seguro de que desea eliminar el registro?'
+});
+````
 En caso de ser un form:
-
-    $( '#guardado' ).confirmSend({
-	    message: '¿Está seguro de que desea eliminar el registro?'
-    });
-
+````js
+$( '#guardado' ).confirmSend({
+    message: '¿Está seguro de que desea eliminar el registro?'
+});
+````
 #### **Soporte ConfirmSend**
 
 [![](https://avatars2.githubusercontent.com/u/1232056?v=3&s=60)](https://monetizejs.com/authorize?client_id=ESTHdCYOi18iLhhO&summary=true)
