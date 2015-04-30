@@ -30,9 +30,9 @@ En caso de ser un form:
 ````html
 <form action="guardar_datos.php" method="POST" id="guardado">
     <input type="text" name="name" placeholder="Nombre" />
-       <input type="text" name="second_name" placeholder="Apellido" />
-
-	<input type="submit" value="Enviar"/>
+    <input type="text" name="second_name" placeholder="Apellido" />
+    
+    <input type="submit" value="Enviar"/>
 </form>
 ````
 
