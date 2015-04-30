@@ -19,9 +19,11 @@
 			this.setEvents();
 		},
 		showMessage: function() {
-			return confirm( this.options.messahge );
+			return confirm( this.options.message );
 		},
 		setEvents: function(){
+			var that = this;
+
 			this.element.click( function() {
 				if ( $( this )[ 0 ].tagName == 'A' ){
 					if( !that.showMessage() ){
